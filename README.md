@@ -3,7 +3,7 @@
 A responsive multi-page website for TechFix Lagos, a fictional laptop and phone repair shop. Built as a web development assignment.
 
 ## Live Site
-https://YOUR-SITE-NAME.netlify.app
+https://YOUR-SITE-NAME.onrender.com
 
 ## Pages
 - **Home** (`index.html`): hero section, reasons to choose us, customer reviews
@@ -24,7 +24,7 @@ https://YOUR-SITE-NAME.netlify.app
 This is a demo form. It validates the user's input but does not send messages anywhere, because no backend is connected.
 
 ## Technologies Used
-HTML5, CSS3, JavaScript, GitHub, Netlify
+HTML5, CSS3, JavaScript, GitHub, Render
 
 ## Project Structure
 ```

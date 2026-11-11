@@ -67,3 +67,9 @@ form input.invalid, form textarea.invalid { border-color:var(--red); }
   nav { display:none; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:var(--dark); padding:1rem; gap:.5rem; z-index:10; }
   nav.open { display:flex; }
 }
+
+/* Images */
+img { max-width:100%; height:auto; display:block; }
+.card img { border-radius:6px; margin-bottom:.8rem; width:100%; }
+.intro img { border-radius:8px; }
+.wide-img { max-width:520px; margin:0 auto 1.5rem; border-radius:8px; }
