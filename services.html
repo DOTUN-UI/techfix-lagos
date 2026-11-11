@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TechFix Lagos - fast, honest laptop and phone repairs.">
+<title>Services | TechFix Lagos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Tech<span>Fix</span> Lagos</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="mainNav" aria-label="Main navigation">
+    <a href="index.html" >Home</a>
+    <a href="about.html" >About</a>
+    <a href="services.html" class="active" aria-current="page">Services</a>
+    <a href="contact.html" >Contact</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>Our Services</h1>
+  <p>Choose a category to filter the list.</p>
+  <div class="filters" role="group" aria-label="Filter services">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="laptop">Laptops</button>
+    <button class="filter-btn" data-filter="phone">Phones</button>
+  </div>
+  <div class="grid" id="serviceGrid">
+    <article class="card service" data-category="laptop"><h3>Laptop Screen Replacement</h3><p>Cracked or flickering screens replaced.</p><p class="price">From &#8358;35,000</p></article>
+    <article class="card service" data-category="laptop"><h3>Virus Removal and Tune-up</h3><p>Speed up a slow laptop and clean out malware.</p><p class="price">From &#8358;8,000</p></article>
+    <article class="card service" data-category="laptop"><h3>Battery Replacement</h3><p>Get hours of battery life back.</p><p class="price">From &#8358;20,000</p></article>
+    <article class="card service" data-category="phone"><h3>Phone Screen Repair</h3><p>Most Android and iPhone models.</p><p class="price">From &#8358;15,000</p></article>
+    <article class="card service" data-category="phone"><h3>Charging Port Repair</h3><p>Phone not charging? We fix or replace the port.</p><p class="price">From &#8358;7,000</p></article>
+    <article class="card service" data-category="phone"><h3>Data Recovery</h3><p>Recover photos and contacts from damaged phones.</p><p class="price">From &#8358;10,000</p></article>
+  </div>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 TechFix Lagos. All rights reserved.</p>
+  <p>Shop 12, Computer Village, Ikeja, Lagos</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

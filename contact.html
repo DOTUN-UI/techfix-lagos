@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TechFix Lagos - fast, honest laptop and phone repairs.">
+<title>Contact | TechFix Lagos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Tech<span>Fix</span> Lagos</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="mainNav" aria-label="Main navigation">
+    <a href="index.html" >Home</a>
+    <a href="about.html" >About</a>
+    <a href="services.html" >Services</a>
+    <a href="contact.html" class="active" aria-current="page">Contact</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>Contact Us</h1>
+  <div class="flex-row">
+    <section class="text-block">
+      <h2>Visit or call</h2>
+      <p><strong>Address:</strong> Shop 12, Computer Village, Ikeja, Lagos</p>
+      <p><strong>Phone:</strong> 0800 000 0000</p>
+      <p><strong>Hours:</strong> Mon-Sat, 9am - 6pm</p>
+    </section>
+    <section class="text-block">
+      <h2>Send us a message</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+        <span class="error" id="subjectError"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit" class="btn">Check my message</button>
+        <p id="formFeedback" role="status"></p>
+      </form>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 TechFix Lagos. All rights reserved.</p>
+  <p>Shop 12, Computer Village, Ikeja, Lagos</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
