@@ -3,7 +3,7 @@
 A responsive multi-page website for TechFix Lagos, a fictional laptop and phone repair shop. Built as a web development assignment.
 
 ## Live Site
-https://YOUR-SITE-NAME.onrender.com
+https://techfix-lagos.onrender.com
 
 ## Pages
 - **Home** (`index.html`): hero section, reasons to choose us, customer reviews
@@ -41,4 +41,7 @@ README.md
 Download or clone the repository and open `index.html` in any web browser.
 
 ## Author
-YOUR NAME, YOUR MATRIC NUMBER
+Name: Oladeinde Olamidotun Richard
+Matric number: 202660653701DH
+
+This is what is in it
