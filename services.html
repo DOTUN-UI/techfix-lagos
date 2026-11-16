@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="TechFix Lagos - fast, honest laptop and phone repairs.">
 <title>Services | TechFix Lagos</title>
+<meta name="description" content="TechFix Lagos - fast, honest laptop and phone repairs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="index.html">Tech<span>Fix</span> Lagos</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-  <nav id="mainNav" aria-label="Main navigation">
-    <a href="index.html" >Home</a>
-    <a href="about.html" >About</a>
-    <a href="services.html" class="active" aria-current="page">Services</a>
-    <a href="contact.html" >Contact</a>
-  </nav>
-</header>
-<main class="container">
-  <h1>Our Services</h1>
-  <p>Choose a category to filter the list.</p>
-  <div class="filters" role="group" aria-label="Filter services">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="laptop">Laptops</button>
-    <button class="filter-btn" data-filter="phone">Phones</button>
-  </div>
-  <div class="grid" id="serviceGrid">
-    <article class="card service" data-category="laptop"><img src="laptop-screen.svg" alt="Laptop with a cracked screen"><h3>Laptop Screen Replacement</h3><p>Cracked or flickering screens replaced.</p><p class="price">From &#8358;35,000</p></article>
-    <article class="card service" data-category="laptop"><img src="virus-removal.svg" alt="Laptop with a virus warning"><h3>Virus Removal and Tune-up</h3><p>Speed up a slow laptop and clean out malware.</p><p class="price">From &#8358;8,000</p></article>
-    <article class="card service" data-category="laptop"><img src="battery.svg" alt="Laptop battery"><h3>Battery Replacement</h3><p>Get hours of battery life back.</p><p class="price">From &#8358;20,000</p></article>
-    <article class="card service" data-category="phone"><img src="phone-screen.svg" alt="Phone with a cracked screen"><h3>Phone Screen Repair</h3><p>Most Android and iPhone models.</p><p class="price">From &#8358;15,000</p></article>
-    <article class="card service" data-category="phone"><img src="charging-port.svg" alt="Phone charging port"><h3>Charging Port Repair</h3><p>Phone not charging? We fix or replace the port.</p><p class="price">From &#8358;7,000</p></article>
-    <article class="card service" data-category="phone"><img src="data-recovery.svg" alt="Storage drive with a check mark"><h3>Data Recovery</h3><p>Recover photos and contacts from damaged phones.</p><p class="price">From &#8358;10,000</p></article>
-  </div>
+<header><div class="wrap bar"><a class="logo" href="index.html">TechFix<span>Lagos</span></a>
+<button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+<nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html" aria-current=page>Services</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Our services</h1><p>Six repairs we do every day. Choose a device to filter the list.</p></div></div>
+<section><div class="wrap"><div class="filters" role="group" aria-label="Filter services">
+<button data-f="all" aria-pressed="true">All</button><button data-f="laptops" aria-pressed="false">Laptops</button><button data-f="phones" aria-pressed="false">Phones</button></div>
+<div class="grid"><article class="card" data-cat="phones"><span class="kind">Phones</span><h3>Phone screen replacement</h3><p>Cracked or dead display replaced with a tested screen.</p></article><article class="card" data-cat="laptops"><span class="kind">Laptops</span><h3>Laptop screen and keyboard</h3><p>New screens and keyboards fitted for most laptop brands.</p></article><article class="card" data-cat="laptops phones"><span class="kind">Laptops and phones</span><h3>Battery replacement</h3><p>A fresh battery when yours drains fast or will not hold charge.</p></article><article class="card" data-cat="phones"><span class="kind">Phones</span><h3>Charging port repair</h3><p>Fixes loose or dead ports so your phone charges again.</p></article><article class="card" data-cat="laptops"><span class="kind">Laptops</span><h3>Virus and malware removal</h3><p>Cleans a slow or infected laptop and secures it.</p></article><article class="card" data-cat="laptops phones"><span class="kind">Laptops and phones</span><h3>Data recovery</h3><p>We retrieve photos, documents and contacts from failing devices.</p></article></div></div></section>
 </main>
-<footer class="site-footer">
-  <p>&copy; 2026 TechFix Lagos. All rights reserved.</p>
-  <p>Shop 12, Computer Village, Ikeja, Lagos</p>
-</footer>
+<footer><div class="wrap foot"><p>&copy; 2026 TechFix Lagos. All rights reserved.</p><p>Shop 12, Computer Village, Ikeja, Lagos</p></div></footer>
 <script src="script.js"></script>
 </body>
 </html>

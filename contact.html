@@ -1,62 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="TechFix Lagos - fast, honest laptop and phone repairs.">
 <title>Contact | TechFix Lagos</title>
+<meta name="description" content="TechFix Lagos - fast, honest laptop and phone repairs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="logo" href="index.html">Tech<span>Fix</span> Lagos</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-  <nav id="mainNav" aria-label="Main navigation">
-    <a href="index.html" >Home</a>
-    <a href="about.html" >About</a>
-    <a href="services.html" >Services</a>
-    <a href="contact.html" class="active" aria-current="page">Contact</a>
-  </nav>
-</header>
-<main class="container">
-  <h1>Contact Us</h1>
-  <div class="flex-row">
-    <section class="text-block">
-      <h2>Visit or call</h2>
-      <p><strong>Address:</strong> Shop 12, Computer Village, Ikeja, Lagos</p>
-      <p><strong>Phone:</strong> 0800 000 0000 (sample number)</p>
-      <p><strong>Email:</strong> hello@techfixlagos.example (sample email)</p>
-      <p><strong>Hours:</strong> Mon-Sat, 9am - 6pm</p>
-    </section>
-    <section class="text-block">
-      <h2>Send us a message</h2>
-      <form id="contactForm" novalidate>
-        <label for="name">Full name</label>
-        <input type="text" id="name" name="name">
-        <span class="error" id="nameError"></span>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <span class="error" id="emailError"></span>
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject">
-        <span class="error" id="subjectError"></span>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5"></textarea>
-        <span class="error" id="messageError"></span>
-
-        <button type="submit" class="btn">Check my message</button>
-        <p id="formFeedback" role="status"></p>
-      </form>
-    </section>
-  </div>
+<header><div class="wrap bar"><a class="logo" href="index.html">TechFix<span>Lagos</span></a>
+<button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+<nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html" aria-current=page>Contact</a></li></ul></nav></div></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Get a quote</h1><p>Tell us what is wrong and we will reply with a price.</p></div></div>
+<section><div class="wrap two"><div><h2>Visit or contact us</h2><dl class="info">
+<dt>Address</dt><dd>Shop 12, Computer Village, Ikeja, Lagos</dd>
+<dt>Opening hours</dt><dd>Monday to Saturday, 9am to 6pm</dd>
+<dt>Email</dt><dd>hello@techfixlagos.example</dd></dl></div>
+<form id="quote-form" novalidate><h2>Send us a message</h2>
+<label for="name">Full name</label><input id="name" name="name" autocomplete="name"><div class="err" id="err-name"></div>
+<label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel"><div class="err" id="err-phone"></div>
+<label for="device">Device</label><select id="device" name="device"><option value="">Choose one</option><option>Laptop</option><option>Phone</option></select><div class="err" id="err-device"></div>
+<label for="message">What is the problem?</label><textarea id="message" name="message" rows="4"></textarea><div class="err" id="err-message"></div>
+<button class="btn" type="submit">Send message</button>
+<p id="ok" hidden role="status">Thank you. Your message has been received and we will reply shortly.</p></form></div></section>
 </main>
-<footer class="site-footer">
-  <p>&copy; 2026 TechFix Lagos. All rights reserved.</p>
-  <p>Shop 12, Computer Village, Ikeja, Lagos</p>
-</footer>
+<footer><div class="wrap foot"><p>&copy; 2026 TechFix Lagos. All rights reserved.</p><p>Shop 12, Computer Village, Ikeja, Lagos</p></div></footer>
 <script src="script.js"></script>
 </body>
 </html>
