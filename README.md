@@ -41,7 +41,7 @@ README.md
 Download or clone the repository and open `index.html` in any web browser.
 
 ## Author
-Name: Oladeinde Olamidotun Richard
+Name: Oladeinde Olamidotun Richard.
 Matric number: 202660653701DH
 
-This is what is in it
+
